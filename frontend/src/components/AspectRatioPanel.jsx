@@ -2,15 +2,15 @@ import { useState, useMemo } from 'react'
 import '../styles/AspectRatioPanel.css'
 
 const PRESETS = [
-  { id: '1_1', label: '1:1 Square', ratio: '1:1', desc: 'Instagram, Profile' },
-  { id: '4_3', label: '4:3 Standard', ratio: '4:3', desc: 'Photos, Slides' },
-  { id: '3_2', label: '3:2 Classic', ratio: '3:2', desc: 'Photography' },
-  { id: '16_9', label: '16:9 Widescreen', ratio: '16:9', desc: 'YouTube, Video' },
-  { id: '9_16', label: '9:16 Portrait', ratio: '9:16', desc: 'Stories, Reels' },
-  { id: '21_9', label: '21:9 Ultrawide', ratio: '21:9', desc: 'Banners, Hero' },
-  { id: '4_5', label: '4:5 Portrait', ratio: '4:5', desc: 'Instagram Post' },
-  { id: '2_1', label: '2:1 Panoramic', ratio: '2:1', desc: 'Headers' },
-  { id: 'custom', label: 'Custom', ratio: 'custom', desc: 'Your size' },
+  { id: '1_1', label: '1:1 Square', ratio: '1:1', desc: 'Rings, Earrings, Pendants' },
+  { id: '4_3', label: '4:3 Standard', ratio: '4:3', desc: 'Necklace Flat-lays' },
+  { id: '3_2', label: '3:2 Classic', ratio: '3:2', desc: 'Jewelry Sets, Bridal' },
+  { id: '16_9', label: '16:9 Widescreen', ratio: '16:9', desc: 'Model Shots, Lifestyle' },
+  { id: '9_16', label: '9:16 Portrait', ratio: '9:16', desc: 'Pendant Drops, Long Chains' },
+  { id: '21_9', label: '21:9 Ultrawide', ratio: '21:9', desc: 'Collection Banners' },
+  { id: '4_5', label: '4:5 Portrait', ratio: '4:5', desc: 'On-wrist, On-model' },
+  { id: '2_1', label: '2:1 Panoramic', ratio: '2:1', desc: 'Multi-piece Layouts' },
+  { id: 'custom', label: 'Custom', ratio: 'custom', desc: 'Your dimensions' },
 ]
 
 export default function AspectRatioPanel({ file, onRemoveFile, onTransform, onUploadOnly, isLoading }) {
